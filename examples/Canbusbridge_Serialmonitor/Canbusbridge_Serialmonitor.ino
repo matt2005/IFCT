@@ -44,9 +44,6 @@ void setup() {
    */
 
 
-
-
-
 void loop() {
 
   /* 
@@ -69,9 +66,6 @@ void loop() {
     Can0.write(msg);
   }
 }
-
-
-
 
 
 void canSniff0(const CAN_message_t &msg) { // global callback
@@ -110,10 +104,6 @@ void canSniff0(const CAN_message_t &msg) { // global callback
   pbuf += 2, text_length +=2;
   Serial.write(buf,text_length);
 }
-
-
-
-
 
 
 void canSniff1(const CAN_message_t &msg) { // global callback
